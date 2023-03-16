@@ -1,3 +1,6 @@
-# lerning-typescript-introduction
+# Learning Typescript by Alura
 
-Learning Typescript by Alura
+## Installation
+
+```npm install```
+
