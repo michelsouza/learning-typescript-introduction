@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
-        "outDir": "dist/js",
-        "target": "ES6",
-        "noEmitOnError": true,
-        "noImplicitAny": true
+        "outDir": "dist/js", // pasta destino apos compilação dos arquivos
+        "target": "ES6", // aponta a versão do Ecma Script  a qual seja compilado
+        "noEmitOnError": true, // não gera o arquivo js enquanto o codigo conter erro em ts
+        "noImplicitAny": true //
     },
-    "include": ["app/**/*"]
+    "include": ["app/**/*"] // pasta origem dos arquivos typescript
 }
