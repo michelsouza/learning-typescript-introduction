@@ -1,10 +1,14 @@
 import {Negociacao} from "../models/Negociacao.js";
+import {Negociacoes} from "../models/Negociacoes.js";
 
 export class NegociacaoController {
 
     private inputData: HTMLInputElement; // tipo contigo no ts para elementos do tipo inport de form
     private inputQuantidade: HTMLInputElement;
     private inputValue: HTMLInputElement;
+    private negociacoes = new Negociacoes();
+    // private negociacoes: Negociacoes
+    // Se seto um valor, no caso new Negociacoes, ts ja entende que é uma variavel do tipo Negociacoes
 
     constructor() {
         this.inputData = document.querySelector('#data');
