@@ -1,6 +1,10 @@
 import { Negociacao } from "../models/Negociacao.js";
+import { Negociacoes } from "../models/Negociacoes.js";
 export class NegociacaoController {
+    // private negociacoes: Negociacoes
+    // Se seto um valor, no caso new Negociacoes, ts ja entende que é uma variavel do tipo Negociacoes
     constructor() {
+        this.negociacoes = new Negociacoes();
         this.inputData = document.querySelector('#data');
         this.inputQuantidade = document.querySelector('#quantidade');
         this.inputValue = document.querySelector('#valor');
